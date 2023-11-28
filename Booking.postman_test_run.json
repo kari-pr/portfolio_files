@@ -1,0 +1,208 @@
+{
+	"id": "29e62e20-8e0c-4e67-9f6c-61deb2161779",
+	"name": "Booking",
+	"timestamp": "2023-11-28T17:40:52.368Z",
+	"collection_id": "26381849-9491b4dd-3df6-4e27-aad8-5a461217d57c",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 6,
+	"delay": 0,
+	"persist": false,
+	"status": "finished",
+	"startedAt": "2023-11-28T17:40:49.453Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "a3321cba-de53-43fa-9a9c-80f9340a6944",
+			"name": "Auth - CreateToken",
+			"url": "https://restful-booker.herokuapp.com/auth",
+			"time": 513,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Auth successful: 169c1144c985ca5": true
+			},
+			"testPassFailCounts": {
+				"Auth successful: 169c1144c985ca5": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				513
+			],
+			"allTests": [
+				{
+					"Auth successful: 169c1144c985ca5": true
+				}
+			]
+		},
+		{
+			"id": "4b302f4d-8395-450d-b2b5-94289cafc7da",
+			"name": "Create Booking",
+			"url": "https://restful-booker.herokuapp.com/booking",
+			"time": 139,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"New costumer: Jim Brown checkin date is: 2023-12-01, checkout date is:  2024-01-01": true
+			},
+			"testPassFailCounts": {
+				"New costumer: Jim Brown checkin date is: 2023-12-01, checkout date is:  2024-01-01": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				139
+			],
+			"allTests": [
+				{
+					"New costumer: Jim Brown checkin date is: 2023-12-01, checkout date is:  2024-01-01": true
+				}
+			]
+		},
+		{
+			"id": "b2200f63-ca09-4cd4-9898-8496432e7bf3",
+			"name": "Update Booking",
+			"url": "https://restful-booker.herokuapp.com/booking/4500",
+			"time": 634,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"The bookings is updateded": true
+			},
+			"testPassFailCounts": {
+				"The bookings is updateded": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				634
+			],
+			"allTests": [
+				{
+					"The bookings is updateded": true
+				}
+			]
+		},
+		{
+			"id": "f91be2fe-c84e-452c-bb57-67799def8da1",
+			"name": "Get Booking",
+			"url": "https://restful-booker.herokuapp.com/booking/4500",
+			"time": 222,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Costumer id: 4500 Costumer name: Jim Brown checkin date is: 2023-12-01 checkout date is:  2024-01-01": true
+			},
+			"testPassFailCounts": {
+				"Costumer id: 4500 Costumer name: Jim Brown checkin date is: 2023-12-01 checkout date is:  2024-01-01": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				222
+			],
+			"allTests": [
+				{
+					"Costumer id: 4500 Costumer name: Jim Brown checkin date is: 2023-12-01 checkout date is:  2024-01-01": true
+				}
+			]
+		},
+		{
+			"id": "694c159a-94eb-4560-895b-208f8371cb16",
+			"name": "Partial Update Booking",
+			"url": "https://restful-booker.herokuapp.com/booking/4500",
+			"time": 237,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"The bookings is partialy changed": true
+			},
+			"testPassFailCounts": {
+				"The bookings is partialy changed": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				237
+			],
+			"allTests": [
+				{
+					"The bookings is partialy changed": true
+				}
+			]
+		},
+		{
+			"id": "7690f77b-e2dc-4813-9f60-dc2498a21199",
+			"name": "Delete Booking",
+			"url": "https://restful-booker.herokuapp.com/booking/4500",
+			"time": 243,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Booking with the id: 4500 is deleted": true
+			},
+			"testPassFailCounts": {
+				"Booking with the id: 4500 is deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				243
+			],
+			"allTests": [
+				{
+					"Booking with the id: 4500 is deleted": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1988,
+	"collection": {
+		"requests": [
+			{
+				"id": "a3321cba-de53-43fa-9a9c-80f9340a6944",
+				"method": "POST"
+			},
+			{
+				"id": "4b302f4d-8395-450d-b2b5-94289cafc7da",
+				"method": "POST"
+			},
+			{
+				"id": "b2200f63-ca09-4cd4-9898-8496432e7bf3",
+				"method": "PUT"
+			},
+			{
+				"id": "f91be2fe-c84e-452c-bb57-67799def8da1",
+				"method": "GET"
+			},
+			{
+				"id": "694c159a-94eb-4560-895b-208f8371cb16",
+				"method": "PATCH"
+			},
+			{
+				"id": "7690f77b-e2dc-4813-9f60-dc2498a21199",
+				"method": "DELETE"
+			}
+		]
+	}
+}
